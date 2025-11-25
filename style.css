@@ -1,31 +1,32 @@
 body {
-    background-color: #FFF7ED; 
-    margin: 0;
-    padding-left: 40px;
-    font-family: Arial, sans-serif;
-}
-
-nav ul {
-    list-style: none;  
     margin: 0;
     padding: 0;
 }
 
-nav li {
-    display: inline;    /* put items on one line */
-    margin-right: 15px; /* space between links */
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.menu-item {
-    display: flex;          /* image and text side-by-side */
-    align-items: flex-start;
-    margin-bottom: 20px;
+h1 {
+    color: #333;
 }
 
-.menu-item img {
-    width: 500px;           /* keep same size */
-    height: auto;
-    margin-right: 20px;     /* space between image and text */
+.hero h1 {
+  color:white;
+}
+
+h2 {
+    color: #444;
+}
+
+h3 {
+    font-size: 28px;
+    color: black;
+}
+
+.top-bar .logo {
+    color: white;
 }
 
 .top-bar {
@@ -51,12 +52,79 @@ nav li {
   gap: 25px;                   /* space between words */
 }
 
+
 .nav-links a {
-  color: white;
+  color: #FFF7ED;
   text-decoration: none;
   font-size: 18px;
 }
 
+
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+/* ========= HOVER DESCRIPTION ON IMAGE ========= */
+.front-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.gallery-item img {
+    width: 500px;         
+    height: 500px;         
+    object-fit: cover;     
+    display: block;
+    margin-top: 10px;
+}
+
+.gallery-text h3 {
+    color: white;
+}
+.gallery-item {
+    position: relative;
+    display: inline-block;
+}
+
+/* hidden overlay */
+.gallery-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;                 /* hidden at start */
+  transition: opacity 0.3s;   /* fade in/out */
+  padding: 10px;
+}
+
+/* show when mouse is on the image */
+.gallery-item:hover .gallery-text {
+  opacity: 1;
+}
+
+.hero {
+    padding: 160px 0;
+    background-image: url("images/FrontPage.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* box that holds the text */
+.hero-text {
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+
