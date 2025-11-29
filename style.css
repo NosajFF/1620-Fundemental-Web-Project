@@ -171,17 +171,6 @@ section { padding: 40px 0; }
    MENU LAYOUT 🌟 NEW SECTION 🌟
    ------------------------- */
 
-.menu-grid {
-  /* Set a max width and center the entire menu */
-  max-width: 1080px; 
-  margin: 0 auto;
-  padding: 2rem;
-  
-  /* Use Grid for a responsive, clean layout */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
 
 /* The wrapper for each individual item (image + text) */
 .gallery-item {
@@ -240,6 +229,32 @@ section { padding: 40px 0; }
 /* -------------------------
    MENU ITEM DESCRIPTION STYLES 🌟 NEW SECTION 🌟
    ------------------------- */
+
+
+
+.menu-grid {
+  /* Set a max width and center the entire menu */
+  max-width: 1080px; 
+  margin: 0 auto;
+  padding: 2rem;
+  
+  /* Use Grid for a responsive, clean layout */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.menu-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1a1110; 
+    letter-spacing: 2px;
+}
+
 .menu-item-info {
     padding: 15px 20px 20px 20px;
 }
