@@ -1,10 +1,7 @@
-/* -------------------------
-   GLOBAL / RESET
-   ------------------------- */
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; padding: 0; }
 
-/* Slightly darker warm cream for site background (you asked darker) */
+
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background: linear-gradient(180deg, #d9cbb1 0%, #d6c2a3 100%);
@@ -14,14 +11,12 @@ body {
   line-height: 1.5;
 }
 
-/* Basic section spacing (keeps other pages neat) */
+
 section { padding: 40px 0; }
 
-/* -------------------------
-   TOP NAV / HEADER (shared)
-   ------------------------- */
+
 .top-bar {
-  background-color: #0b0b0b; /* black */
+  background-color: #0b0b0b; 
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -43,7 +38,7 @@ section { padding: 40px 0; }
   gap: 10px;
 }
 
-/* nav */
+
 .nav-links {
   list-style: none;
   margin: 0;
@@ -72,34 +67,28 @@ section { padding: 40px 0; }
   font-weight: 600;
 }
 
-/* -------------------------
-   PAGE LAYOUT (About)
-   ------------------------- */
+
 .about-page { 
-  /* 🌟 Keep these for spacing: */
+  
   padding-top: 100px; 
   padding-bottom: 80px; 
   padding-left: 2rem;
   padding-right: 2rem;
   
-  /* 🛑 IMPORTANT: REMOVE or set to normal flow */
-  /* Remove these three lines to stop vertical centering */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  
 
-  /* Instead, use this to center the card horizontally: */
-  display: block; /* Ensures standard block flow */
-  max-width: 1000px; /* Optional: Sets max width for better readability */
-  margin: 0 auto; /* Centers the whole wrapper horizontally */
+  
+  display: block; 
+  max-width: 1000px; 
+  margin: 0 auto; 
 }
 
-/* The nice rounded card that was the "good" design */
+
 .about-card {
   width: 62vw;
   max-width: 980px;
   min-height: 48vh;
-  margin: 0 auto;             /* roughly half the viewport */
+  margin: 0 auto;             
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));
   border-radius: 12px;
   padding: 3.25rem 3rem;
@@ -108,11 +97,11 @@ section { padding: 40px 0; }
   overflow: auto;
 }
 
-/* Titles */
+
 .about-card h1 {
   margin: 0 0 .45rem 0;
   font-size: 2.25rem;
-  color: #4a2f22; /* coffee-y accent */
+  color: #4a2f22; 
   letter-spacing: -0.4px;
   font-family: Georgia, "Times New Roman", serif;
 }
@@ -141,16 +130,14 @@ section { padding: 40px 0; }
   line-height: 1.7;
 }
 
-/* Footer note inside the card */
+
 .about-footer {
   margin-top: 1.6rem;
   color: #7a5f4d;
   font-size: 0.92rem;
 }
 
-/* -------------------------
-   HERO / FRONT PAGE (keeps existing pages working)
-   ------------------------- */
+
 .hero {
   padding: 140px 0;
   background-image: url("images/FrontPage.jpg");
@@ -167,17 +154,15 @@ section { padding: 40px 0; }
   color: white;
 }
 
-/* -------------------------
-   MENU LAYOUT 🌟 NEW SECTION 🌟
-   ------------------------- */
 
 
-/* The wrapper for each individual item (image + text) */
+
+
 .gallery-item {
     position: relative; 
     overflow: hidden;
     border-radius: 10px;
-    background-color: #fff; /* White background for the whole card */
+    background-color: #fff; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
 }
@@ -187,25 +172,14 @@ section { padding: 40px 0; }
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* -------------------------
-   GALLERY / MENU IMAGES 
-   ------------------------- */
+
 .gallery-item img {
     width: 100%; 
     height: 300px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0; /* Keep top corners rounded */
+    border-radius: 10px 10px 0 0; 
     display: block; 
 }
-
-
-/* overlay text (menu cards) - Optional overlay removed for the new block layout.
-   If you want to keep the overlay on hover, keep the .gallery-text block below.
-   I'm commenting out the parts that control the hover overlay, as your screenshot
-   suggests a simple block layout is desired.
-*/
-
-/* .gallery-item:hover .gallery-text { opacity: 1; } */
 
 .gallery-text {
   position: absolute;
@@ -226,19 +200,17 @@ section { padding: 40px 0; }
   font-size: 1.05rem;
 }
 
-/* -------------------------
-   MENU ITEM DESCRIPTION STYLES 🌟 NEW SECTION 🌟
-   ------------------------- */
+
 
 
 
 .menu-grid {
-  /* Set a max width and center the entire menu */
+  
   max-width: 1080px; 
   margin: 0 auto;
   padding: 2rem;
   
-  /* Use Grid for a responsive, clean layout */
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -273,13 +245,13 @@ section { padding: 40px 0; }
 
 .price {
     font-weight: 700;
-    color: #6f4e37; /* Coffee brown */
+    color: #6f4e37; 
     font-size: 1.1rem;
     margin-right: 10px;
 }
 
 
-/* responsive rules */
+
 @media (max-width: 980px) {
   .about-card { width: 92vw; padding: 2rem; min-height: auto; }
   .hero { padding: 80px 0; }
@@ -293,7 +265,7 @@ section { padding: 40px 0; }
 }
 
 
-/* 1. Container Styles (from previous step) */
+
 .about-title {
     list-style-type: none; 
     margin: 0;
@@ -302,16 +274,17 @@ section { padding: 40px 0; }
     justify-content: flex-end; 
 }
 
-/* 2. Link Styles (The Separation Fix is here) */
+
 .about-title a {
     display: block; 
     
-    /* Increased the left/right spacing to separate the words */
+    
     padding: 15px 25px; 
     
-    /* Other appearance styles */
+    
     text-decoration: none;
     color: white;
-    /* Optional: If you want to remove the underline completely */
+    
     border-bottom: none; 
 }
+
